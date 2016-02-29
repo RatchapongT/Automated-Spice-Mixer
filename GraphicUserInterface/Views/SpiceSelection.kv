@@ -1,0 +1,17 @@
+<SpiceSelection>:
+    FloatLayout:
+        Button:
+            pos: 500, 0
+            size: 250, 250
+            size_hint: None, None
+            background_normal: 'SpiceSelection.png'
+            background_down: 'SpiceSelection.png'
+
+            text: 'Goto settings'
+            on_release: root.manager.current = 'Homepage'
+            Image:
+                source: 'kivy.png'
+                y: self.parent.y + self.parent.height - 250
+                x: self.parent.x
+                size: 250, 250
+                allow_stretch: True
